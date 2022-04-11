@@ -7,4 +7,4 @@ console.log(profileDataArr[i]);
 }
 };
 
-printProfileData(profileDataArgs);
+

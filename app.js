@@ -1,6 +1,6 @@
 const profileDataArgs = process.argv.slice(2, process.argv.length);
-const name = profileDataArgs[0];
-const github = profileDataArgs[1];
+const [name, github] = profileDataArgs;
+
 console.log(profileDataArgs)
 
 const generatePage = (userName, githubName) => {
@@ -9,5 +9,6 @@ Name: ${userName}
 Github: ${githubName}
 `;
 };
+console.log(name, github);
 console.log(generatePage(name, github));
 
